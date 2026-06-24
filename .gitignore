@@ -1,6 +1,13 @@
-
 venv/
 __pycache__/
+
 *.csv
 .DS_Store
 .vscode/
+.idea/
+
+# .NET
+bin/
+obj/
+
+appsettings.json
