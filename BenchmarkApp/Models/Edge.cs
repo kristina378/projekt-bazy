@@ -13,7 +13,9 @@ public class Edge
     [Name("ID_Celu")]
     public int TargetId { get; init; }
 
+    [Ignore]
     public Device Source { get; set; } = null!;
+    [Ignore]
     public Device Target { get; set; } = null!;
 
     [Name("Opoznienie_ms")]

@@ -9,6 +9,8 @@ public class Log
 
     [Name("ID_Urzadzenia")]
     public int DeviceId { get; init; }
+    
+    [Ignore]
     public Device Device { get; set; } = null!;
 
     [Name("Data")]

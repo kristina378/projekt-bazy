@@ -8,6 +8,8 @@ public class Device
 
     [Name("ID_Rodzica")]
     public int? ParentDeviceId { get; set; }
+
+    [Ignore]
     public Device? ParentDevice { get; set; }
 
     [Name("Typ_Urzadzenia")]
@@ -20,5 +22,6 @@ public class Device
     public int LocationId { get; set; }
     
     // Właściwość nawigacyjna (nie tworzy kolumny, służy logice ORM w C#)
+    [Ignore]
     public Location Location { get; set; } = null!;
 }
