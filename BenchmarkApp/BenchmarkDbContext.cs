@@ -49,5 +49,21 @@ public class BenchmarkDbContext : DbContext
             .WithMany()
             .HasForeignKey(d => d.ParentDeviceId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Location>()
+            .Property(l => l.Id)
+            .ValueGeneratedNever();
+        
+        modelBuilder.Entity<Device>()
+            .Property(l => l.Id)
+            .ValueGeneratedNever();
+        
+        modelBuilder.Entity<Edge>()
+            .Property(l => l.Id)
+            .ValueGeneratedNever();
+        
+        modelBuilder.Entity<Log>()
+            .Property(l => l.Id)
+            .ValueGeneratedNever();
     }
 }
