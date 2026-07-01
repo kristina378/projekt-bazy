@@ -5,6 +5,7 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+.vs/
 
 # .NET
 bin/
@@ -12,3 +13,8 @@ obj/
 
 appsettings.json
 .env
+
+BenchmarkDotNet.Artifacts/
+
+[Bb]in/
+[Oo]bj/
