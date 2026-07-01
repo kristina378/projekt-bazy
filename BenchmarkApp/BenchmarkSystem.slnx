@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BenchmarkApp.Benchmarks/BenchmarkApp.Benchmarks.csproj" />
+  <Project Path="BenchmarkApp.csproj" />
+</Solution>
